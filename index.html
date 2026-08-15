@@ -3,214 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Invitación de boda de Abigail e Ivan." />
-  <title>Abigail & Ivan — Nuestra Boda</title>
+  <meta name="description" content="Invitación de boda de Abigail e Ivan — 22 de noviembre de 2026." />
+  <meta name="theme-color" content="#3f472d" />
+  <title>Abigail & Ivan — 22.11.2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" id="inicio">
-    <a class="brand" href="#inicio">A + I</a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
-    <nav class="nav" aria-label="Navegación principal">
-      <a href="#historia">Nuestra historia</a>
-      <a href="#detalles">Detalles</a>
-      <a href="#vestimenta">Vestimenta</a>
-      <a href="#preguntas">Preguntas</a>
-      <a class="nav-rsvp" href="#confirmar">Confirmar</a>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero" aria-label="Invitación de boda">
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">ESTÁN INVITADOS A CELEBRAR</p>
-        <h1>Abigail <span>&</span> Ivan</h1>
-        <div class="hero-rule"></div>
-        <p class="hero-date">22 DE NOVIEMBRE DE 2026 · 2:00 P. M. · SAN PEDRO DE MACORÍS</p>
-        <a class="outline-button light" href="#detalles">Ver los detalles</a>
-      </div>
-      <a class="scroll-cue" href="#bienvenida" aria-label="Bajar a la invitación">↓</a>
-    </section>
-
-    <section class="welcome section cream" id="bienvenida">
-      <div class="narrow reveal">
-        <p class="eyebrow dark">JUNTO A NUESTRAS FAMILIAS</p>
-        <h2 class="display-heading">Nos haría muy felices<br>celebrar junto a ustedes.</h2>
-        <p class="body-copy">Acompáñennos en un día muy especial mientras damos este nuevo paso y celebramos rodeados de las personas que más queremos.</p>
-        <div class="date-lockup">
-          <span>22</span>
-          <div>
-            <p>NOVIEMBRE · 2026</p>
-            <p>2:00 P. M.</p>
-          </div>
+    <section class="opening" id="inicio" aria-label="Invitación de Abigail e Ivan">
+      <div class="opening-shade"></div>
+      <div class="opening-content reveal visible">
+        <div class="monogram" aria-label="Iniciales A e I">
+          <span>A</span><i></i><span>I</span>
         </div>
+        <p class="opening-copy">Con el corazón lleno de amor,<br>te invitamos a celebrar nuestro para siempre.</p>
+        <p class="opening-copy small">Nos hace muy felices tenerte aquí.</p>
+        <a class="ghost-button" href="#invitacion">ABRIR INVITACIÓN</a>
       </div>
     </section>
 
-    <section class="story section" id="historia">
-      <div class="story-grid">
-        <div class="story-copy reveal">
-          <p class="eyebrow dark">NUESTRA HISTORIA</p>
-          <h2 class="display-heading">Un poquito de<br><em>nosotros.</em></h2>
-          <p>Cada historia de amor está hecha de pequeños momentos que terminan convirtiéndose en recuerdos para toda la vida.</p>
-          <p>Ahora comienza un nuevo capítulo, y queremos vivirlo rodeados de nuestra familia y amigos.</p>
+    <header class="site-nav" aria-label="Navegación principal">
+      <a class="nav-mark" href="#inicio">A · I</a>
+      <nav>
+        <a href="#historia">Historia</a>
+        <a href="#detalles">Detalles</a>
+        <a href="#programa">Programa</a>
+        <a href="#vestimenta">Vestimenta</a>
+        <a href="#regalos">Regalos</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </header>
+
+    <section class="paper-section invitation-section" id="invitacion">
+      <div class="ornate-card reveal">
+        <span class="corner corner-tl"></span>
+        <span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span>
+        <span class="corner corner-br"></span>
+        <p class="tiny-caps">CON MUCHA ALEGRÍA</p>
+        <p class="script-line">Abigail</p>
+        <p class="ampersand">&</p>
+        <p class="script-line">Ivan</p>
+        <p class="invitation-copy">te invitan a celebrar<br>el día de su boda</p>
+        <div class="date-grid" aria-label="Domingo 22 de noviembre de 2026 a las 2 de la tarde">
+          <span>DOMINGO</span>
+          <strong>22</strong>
+          <span>NOVIEMBRE<br>2026</span>
         </div>
-        <div class="photo-frame reveal delay-1">
-          <img src="assets/abigail-ivan-story.jpg" alt="Abigail e Ivan juntos" />
-          <span class="photo-note">ABIGAIL & IVAN</span>
-        </div>
-        <div class="story-side reveal delay-2">
-          <p class="script-note">“Donde hay amor,<br>hay vida.”</p>
-          <span class="tiny-rule"></span>
-          <p class="small-copy">Gracias por ser parte de nuestra historia y por acompañarnos en este momento tan importante.</p>
-        </div>
+        <p class="time">2:00 P. M.</p>
+        <p class="venue-name">IGLESIA ADVENTISTA CENTRAL</p>
+        <p class="venue-place">San Pedro de Macorís · República Dominicana</p>
+        <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Iglesia+Adventista+Central+San+Pedro+de+Macoris" target="_blank" rel="noopener noreferrer">VER UBICACIÓN ↗</a>
       </div>
     </section>
 
-    <section class="details section dark" id="detalles">
-      <div class="details-heading reveal">
-        <p class="eyebrow light-text">LA BODA</p>
-        <h2 class="display-heading light-text">Celebren este día<br><em>con nosotros.</em></h2>
+    <section class="story-section" id="historia">
+      <div class="story-photo reveal">
+        <img src="assets/abigail-ivan-story.jpg" alt="Abigail e Ivan juntos" />
       </div>
-      <div class="event-grid">
-        <article class="event-card reveal">
-          <p class="card-number">01</p>
-          <h3>Ceremonia</h3>
-          <p class="event-time">2:00 P. M.</p>
-          <p>Iglesia Adventista Central<br>San Pedro de Macorís<br>República Dominicana</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+Adventista+Central+San+Pedro+de+Macoris" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación de la ceremonia en el mapa">Ver ubicación ↗</a>
+      <div class="story-copy reveal delay-1">
+        <p class="section-kicker">NUESTRA HISTORIA</p>
+        <h2>Un amor que nos trajo hasta aquí.</h2>
+        <div class="leaf-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+        <p>Cada historia de amor se construye con momentos sencillos que terminan convirtiéndose en recuerdos para toda la vida.</p>
+        <p>Ahora comienza un nuevo capítulo, y nos emociona poder celebrarlo junto a las personas que queremos.</p>
+        <p class="signature">Abigail & Ivan</p>
+      </div>
+    </section>
+
+    <section class="details-section" id="detalles">
+      <div class="section-title reveal">
+        <p class="section-kicker light">NUESTRO DÍA</p>
+        <h2>Detalles de la boda</h2>
+      </div>
+      <div class="details-grid">
+        <article class="detail-card reveal">
+          <span class="detail-icon">01</span>
+          <h3>Fecha</h3>
+          <p>Domingo<br><strong>22 de noviembre de 2026</strong></p>
         </article>
-        <article class="event-card reveal delay-1">
-          <p class="card-number">02</p>
-          <h3>Recepción</h3>
-          <p class="event-time">DESPUÉS DE LA CEREMONIA</p>
-          <p>Los detalles de la recepción<br>serán compartidos próximamente.</p>
+        <article class="detail-card reveal delay-1">
+          <span class="detail-icon">02</span>
+          <h3>Hora</h3>
+          <p>La ceremonia inicia a las<br><strong>2:00 p. m.</strong></p>
         </article>
-        <article class="event-card reveal delay-2">
-          <p class="card-number">03</p>
-          <h3>Confirmación</h3>
-          <p class="event-time">NOS ENCANTARÍA CONTAR CONTIGO</p>
-          <p>Ayúdanos a preparar este día<br>confirmando tu asistencia.</p>
-          <a href="#confirmar">Confirmar asistencia ↓</a>
+        <article class="detail-card reveal delay-2">
+          <span class="detail-icon">03</span>
+          <h3>Lugar</h3>
+          <p><strong>Iglesia Adventista Central</strong><br>San Pedro de Macorís</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+Adventista+Central+San+Pedro+de+Macoris" target="_blank" rel="noopener noreferrer">Abrir mapa ↗</a>
         </article>
       </div>
     </section>
 
-    <section class="photo-break" aria-label="Fotografía de Abigail e Ivan">
-      <div class="photo-break-overlay"></div>
-      <p class="reveal">22 de noviembre de 2026</p>
+    <section class="full-photo" aria-label="Fotografía de Abigail e Ivan">
+      <img src="assets/abigail-ivan-photo-break.jpg" alt="Abigail e Ivan durante su sesión de fotos" />
+      <div class="full-photo-copy reveal">
+        <p>22 · 11 · 2026</p>
+        <span>Nos vemos allí</span>
+      </div>
     </section>
 
-    <section class="dress section cream" id="vestimenta">
-      <div class="dress-grid">
-        <div class="reveal">
-          <p class="eyebrow dark">CÓDIGO DE VESTIMENTA</p>
-          <h2 class="display-heading">Elegante.</h2>
-          <p class="body-copy left">Queremos que todos se sientan cómodos y especiales. Sugerimos atuendo elegante para acompañarnos en esta celebración.</p>
+    <section class="paper-section timeline-section" id="programa">
+      <div class="section-title reveal">
+        <p class="section-kicker">ORDEN DEL DÍA</p>
+        <h2>Programa</h2>
+      </div>
+      <div class="timeline reveal delay-1">
+        <div class="timeline-item">
+          <span class="timeline-time">ANTES DE LAS 2:00 P. M.</span>
+          <div class="timeline-dot"></div>
+          <div><h3>Llegada</h3><p>Te recomendamos llegar con tiempo para acomodarte antes de comenzar.</p></div>
         </div>
-        <div class="palette-panel reveal delay-1">
-          <p class="palette-label">INSPIRACIÓN DE COLORES</p>
-          <div class="swatches" aria-label="Paleta de colores de la boda">
-            <span style="--swatch:#4d5341"></span>
-            <span style="--swatch:#85836f"></span>
-            <span style="--swatch:#c5bba8"></span>
-            <span style="--swatch:#d8c9bf"></span>
-            <span style="--swatch:#eee9df"></span>
-          </div>
-          <p class="small-copy">Una paleta suave y natural que complementa el estilo de nuestra celebración.</p>
+        <div class="timeline-item featured">
+          <span class="timeline-time">2:00 P. M.</span>
+          <div class="timeline-dot"></div>
+          <div><h3>Ceremonia</h3><p>Iglesia Adventista Central de San Pedro de Macorís.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-time">AL FINALIZAR</span>
+          <div class="timeline-dot"></div>
+          <div><h3>Fotos y saludos</h3><p>Queremos guardar este momento junto a nuestra familia y amigos.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="gallery-section" aria-label="Galería de Abigail e Ivan">
+    <section class="attire-section" id="vestimenta">
+      <div class="attire-photo reveal">
+        <img src="assets/abigail-ivan-gallery-1.jpg" alt="Abigail e Ivan en su sesión de fotos" />
+      </div>
+      <div class="attire-copy reveal delay-1">
+        <p class="section-kicker light">GUÍA DE VESTIMENTA</p>
+        <h2>Elegante</h2>
+        <p>Queremos que te sientas especial y cómodo para celebrar con nosotros. Sugerimos vestimenta elegante.</p>
+        <div class="palette" aria-label="Paleta de colores de inspiración">
+          <span style="--c:#39412b"></span>
+          <span style="--c:#687150"></span>
+          <span style="--c:#9aa27b"></span>
+          <span style="--c:#d0c7b4"></span>
+          <span style="--c:#eee8db"></span>
+        </div>
+        <small>Paleta de inspiración · tonos naturales y oliva</small>
+      </div>
+    </section>
+
+    <section class="gift-section paper-section" id="regalos">
+      <div class="gift-inner reveal">
+        <p class="section-kicker">UN PEQUEÑO MENSAJE</p>
+        <h2>Sobre los regalos</h2>
+        <div class="leaf-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+        <p>Tu presencia en este día tan importante es, para nosotros, el mejor regalo.</p>
+        <p>Lo que más deseamos es compartir este momento contigo.</p>
+        <p class="signature">Con cariño, Abigail & Ivan</p>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="galeria">
+      <div class="section-title reveal">
+        <p class="section-kicker light">ALGUNOS DE NUESTROS MOMENTOS</p>
+        <h2>Galería</h2>
+      </div>
       <div class="gallery-grid">
-        <figure class="gallery-photo reveal">
-          <img src="assets/abigail-ivan-gallery-1.jpg" alt="Abigail e Ivan compartiendo un momento juntos" />
-        </figure>
-        <figure class="gallery-photo gallery-photo-tall reveal delay-1">
-          <img src="assets/abigail-ivan-gallery-2.jpg" alt="Abigail e Ivan celebrando juntos" />
-        </figure>
-        <figure class="gallery-photo reveal delay-2">
-          <img src="assets/abigail-ivan-gallery-3.jpg" alt="Abigail e Ivan durante su sesión de fotos" />
-        </figure>
+        <figure class="gallery-card portrait reveal"><img src="assets/abigail-ivan-gallery-2.jpg" alt="Abigail e Ivan juntos" /></figure>
+        <figure class="gallery-card landscape reveal delay-1"><img src="assets/abigail-ivan-hero.jpg" alt="Abigail e Ivan sonriendo juntos" /></figure>
+        <figure class="gallery-card portrait reveal delay-2"><img src="assets/abigail-ivan-gallery-3.jpg" alt="Abigail e Ivan durante su sesión" /></figure>
       </div>
     </section>
 
-    <section class="registry section" id="regalos">
-      <div class="registry-inner reveal">
-        <p class="eyebrow dark">REGALOS</p>
-        <h2 class="display-heading">Su presencia es<br>nuestro mejor regalo.</h2>
-        <p class="body-copy">Lo más importante para nosotros es poder compartir este día con ustedes.</p>
-      </div>
-    </section>
-
-    <section class="faq section cream" id="preguntas">
-      <div class="faq-grid">
-        <div class="reveal">
-          <p class="eyebrow dark">PREGUNTAS FRECUENTES</p>
-          <h2 class="display-heading">Algunos detalles<br><em>útiles.</em></h2>
-        </div>
-        <div class="accordion reveal delay-1">
-          <details open>
-            <summary>¿Cuándo debo confirmar mi asistencia?</summary>
-            <p>Te agradeceríamos confirmar lo antes posible para poder organizar todos los detalles de la celebración.</p>
-          </details>
-          <details>
-            <summary>¿Puedo llevar acompañante?</summary>
-            <p>Si tienes alguna duda sobre tu invitación o acompañante, puedes comunicarte directamente con nosotros.</p>
-          </details>
-          <details>
-            <summary>¿Pueden asistir niños?</summary>
-            <p>Si tienes preguntas sobre los invitados incluidos en tu invitación, no dudes en consultarnos.</p>
-          </details>
-          <details>
-            <summary>¿Dónde será la ceremonia?</summary>
-            <p>La ceremonia será en la Iglesia Adventista Central de San Pedro de Macorís a las 2:00 p. m.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="rsvp section dark" id="confirmar">
-      <div class="rsvp-layout">
-        <div class="reveal">
-          <p class="eyebrow light-text">CONFIRMACIÓN</p>
-          <h2 class="display-heading light-text">¿Nos<br><em>acompañas?</em></h2>
-          <p class="light-copy">Confirma tu asistencia y ayúdanos a preparar cada detalle. Estamos felices de poder celebrar juntos.</p>
-        </div>
-        <form class="rsvp-form reveal delay-1" id="rsvp-form">
-          <label>
-            Nombre completo
-            <input type="text" name="name" placeholder="Tu nombre" required />
-          </label>
-          <label>
-            Correo electrónico
-            <input type="email" name="email" placeholder="tu@correo.com" required />
-          </label>
-          <fieldset>
-            <legend>¿Podrás acompañarnos?</legend>
-            <label class="radio"><input type="radio" name="attending" value="yes" required /> Sí, con mucho gusto</label>
-            <label class="radio"><input type="radio" name="attending" value="no" /> No podré asistir</label>
-          </fieldset>
-          <label>
-            Notas o restricciones alimentarias
-            <textarea name="notes" rows="3" placeholder="¿Hay algo que debamos saber?"></textarea>
-          </label>
-          <button class="outline-button light submit" type="submit">Enviar confirmación</button>
-          <p class="form-status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
+    <footer>
+      <div class="footer-monogram">A <span>&</span> I</div>
+      <p>22 DE NOVIEMBRE DE 2026</p>
+      <p>San Pedro de Macorís · República Dominicana</p>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <p class="footer-script">Abigail & Ivan</p>
-    <p>22 DE NOVIEMBRE DE 2026 · CON CARIÑO</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
