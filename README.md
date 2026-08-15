@@ -14,5 +14,3 @@ Este proyecto puede publicarse directamente en Vercel; no requiere proceso de bu
 
 ### Opción 2 — GitHub + Vercel
 Sube estos archivos a un repositorio de GitHub y luego importa el repositorio desde Vercel. Cada push futuro puede crear un nuevo deployment automáticamente.
-
-> Nota: el formulario RSVP actualmente es solo visual/demo y todavía no guarda respuestas.
