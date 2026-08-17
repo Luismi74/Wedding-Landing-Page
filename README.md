@@ -10,7 +10,7 @@ Este proyecto puede publicarse directamente en Vercel; no requiere proceso de bu
 1. Descomprime el proyecto.
 2. Abre una terminal dentro de la carpeta.
 3. Instala Vercel CLI: `npm i -g vercel`
-4. Ejecuta: `vercel --prod`
+4. Ejecuta: `vercel --prod`fdd
 
 ### Opción 2 — GitHub + Vercel
 Sube estos archivos a un repositorio de GitHub y luego importa el repositorio desde Vercel. Cada push futuro puede crear un nuevo deployment automáticamente.
