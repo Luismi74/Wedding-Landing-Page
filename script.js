@@ -1,37 +1,42 @@
-const header = document.querySelector('.site-header');
+const header = document.querySelector('.site-nav');
 const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
+const navLinks = document.querySelector('.nav-links');
+const navAnchors = document.querySelectorAll('.nav-links a');
+const revealItems = document.querySelectorAll('.reveal');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navAnchors.forEach((anchor) => {
+    anchor.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 40);
+  if (!header) return;
+  header.classList.toggle('scrolled', window.scrollY > 20);
 });
 
-menuToggle.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(open));
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.18 }
+);
 
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  });
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const form = document.querySelector('#rsvp-form');
-const status = form.querySelector('.form-status');
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const name = data.get('name') || 'Invitado';
-  status.textContent = `Gracias, ${name}. Tu formulario está listo para conectarse a Google Forms, Formspree o a tu propio servicio de confirmaciones.`;
+revealItems.forEach((item) => {
+  if (!item.classList.contains('visible')) {
+    observer.observe(item);
+  }
 });
